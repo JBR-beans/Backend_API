@@ -4,10 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Backend_API.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Backend_API.Areas.Identity.Data;
 
 namespace Backend_API.Data
 {
-    public class Backend_APIContext : DbContext
+    public class Backend_APIContext : IdentityDbContext<SiteUser>
     {
         public Backend_APIContext (DbContextOptions<Backend_APIContext> options)
             : base(options)

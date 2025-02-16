@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Backend_API.Data;
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Identity;
+using Backend_API.Areas.Identity.Data;
 
 namespace Backend_API
 {
@@ -17,7 +18,7 @@ namespace Backend_API
 			builder.Services.AddDbContext<Backend_APIContext>(options =>
 			    options.UseSqlServer(builder.Configuration.GetConnectionString("Backend_APIContext") ?? throw new InvalidOperationException("Connection string 'Backend_APIContext' not found.")));
 
-   builder.Services.AddDefaultIdentity<SiteUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<Backend_APIIdent>();
+   builder.Services.AddDefaultIdentity<SiteUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<Backend_APIContext>();
 
 			// Add services to the container.
 
