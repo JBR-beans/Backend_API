@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\School\\BAS\\Advanced Web Apps IT 310\\Backend_API_Solution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\School\\BAS\\Advanced Web Apps IT 310\\Backend_API_Solution\\Backend_API\\Migrations\\20250203060604_AddedBusinessContactFeedbacksSeedData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend_API\\Migrations\\20250203060604_AddedBusinessContactFeedbacksSeedData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C3924EA-7341-4B73-87C6-1D82FA8F1D86}|Backend_API\\Backend_API.csproj|d:\\school\\bas\\advanced web apps it 310\\backend_api_solution\\backend_api\\data\\backend_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C3924EA-7341-4B73-87C6-1D82FA8F1D86}|Backend_API\\Backend_API.csproj|solutionrelative:backend_api\\data\\backend_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C3924EA-7341-4B73-87C6-1D82FA8F1D86}|Backend_API\\Backend_API.csproj|d:\\school\\bas\\advanced web apps it 310\\backend_api_solution\\backend_api\\migrations\\20250203060604_addedbusinesscontactfeedbacksseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C3924EA-7341-4B73-87C6-1D82FA8F1D86}|Backend_API\\Backend_API.csproj|solutionrelative:backend_api\\migrations\\20250203060604_addedbusinesscontactfeedbacksseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Backend_APIContextDB/True/SqlTable/dbo.Feedback.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
@@ -16,10 +20,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0C3924EA-7341-4B73-87C6-1D82FA8F1D86}|Backend_API\\Backend_API.csproj|d:\\school\\bas\\advanced web apps it 310\\backend_api_solution\\backend_api\\models\\businesscontactdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C3924EA-7341-4B73-87C6-1D82FA8F1D86}|Backend_API\\Backend_API.csproj|solutionrelative:backend_api\\models\\businesscontactdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C3924EA-7341-4B73-87C6-1D82FA8F1D86}|Backend_API\\Backend_API.csproj|d:\\school\\bas\\advanced web apps it 310\\backend_api_solution\\backend_api\\data\\backend_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C3924EA-7341-4B73-87C6-1D82FA8F1D86}|Backend_API\\Backend_API.csproj|solutionrelative:backend_api\\data\\backend_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\School\\BAS\\Advanced Web Apps IT 310\\Backend_API_Solution\\Backend_API\\Migrations\\20250203060244_AddedBusinessDetailsAndSeedData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,8 +58,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 354,
-          "SelectedChildIndex": 5,
+          "DockedWidth": 246,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -83,26 +83,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "20250203060604_AddedBusinessContactFeedbacksSeedData.cs",
               "DocumentMoniker": "D:\\School\\BAS\\Advanced Web Apps IT 310\\Backend_API_Solution\\Backend_API\\Migrations\\20250203060604_AddedBusinessContactFeedbacksSeedData.cs",
               "RelativeDocumentMoniker": "Backend_API\\Migrations\\20250203060604_AddedBusinessContactFeedbacksSeedData.cs",
               "ToolTip": "D:\\School\\BAS\\Advanced Web Apps IT 310\\Backend_API_Solution\\Backend_API\\Migrations\\20250203060604_AddedBusinessContactFeedbacksSeedData.cs",
               "RelativeToolTip": "Backend_API\\Migrations\\20250203060604_AddedBusinessContactFeedbacksSeedData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T06:06:04.714Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dbo.Feedback [Data]",
+              "DocumentIndex": 2,
+              "Title": "dbo.Feedback.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Backend_APIContextDB/True/SqlTable/dbo.Feedback.sql",
-              "ToolTip": "dbo.Feedback [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Backend_APIContextDB/True/SqlTable/dbo.Feedback.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-02-03T06:05:24.003Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T06:05:24.003Z"
             },
             {
               "$type": "Document",
@@ -130,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BusinessContactDetails.cs",
               "DocumentMoniker": "D:\\School\\BAS\\Advanced Web Apps IT 310\\Backend_API_Solution\\Backend_API\\Models\\BusinessContactDetails.cs",
               "RelativeDocumentMoniker": "Backend_API\\Models\\BusinessContactDetails.cs",
@@ -166,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Feedback.cs",
               "DocumentMoniker": "D:\\School\\BAS\\Advanced Web Apps IT 310\\Backend_API_Solution\\Backend_API\\Models\\Feedback.cs",
               "RelativeDocumentMoniker": "Backend_API\\Models\\Feedback.cs",
@@ -174,8 +173,7 @@
               "RelativeToolTip": "Backend_API\\Models\\Feedback.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T05:48:34.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T05:48:34.517Z"
             },
             {
               "$type": "Document",
@@ -191,15 +189,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Backend_APIContext.cs",
               "DocumentMoniker": "D:\\School\\BAS\\Advanced Web Apps IT 310\\Backend_API_Solution\\Backend_API\\Data\\Backend_APIContext.cs",
               "RelativeDocumentMoniker": "Backend_API\\Data\\Backend_APIContext.cs",
               "ToolTip": "D:\\School\\BAS\\Advanced Web Apps IT 310\\Backend_API_Solution\\Backend_API\\Data\\Backend_APIContext.cs",
               "RelativeToolTip": "Backend_API\\Data\\Backend_APIContext.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAIwFwAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T05:38:04.49Z"
+              "WhenOpened": "2025-02-03T05:38:04.49Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
