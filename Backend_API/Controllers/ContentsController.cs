@@ -7,10 +7,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Backend_API.Data;
 using Backend_API.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Backend_API.Controllers
 {
-    [Route("api/[controller]")]
+	[Authorize]
+	[Route("api/[controller]")]
     [ApiController]
     public class ContentsController : ControllerBase
     {

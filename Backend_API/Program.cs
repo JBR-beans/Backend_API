@@ -47,6 +47,7 @@ namespace Backend_API
 
 
 			app.MapControllers();
+			app.MapRazorPages();
 
 			Content test = new Content
 			{
