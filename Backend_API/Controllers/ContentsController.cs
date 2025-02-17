@@ -11,7 +11,6 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Backend_API.Controllers
 {
-	[Authorize]
 	[Route("api/[controller]")]
     [ApiController]
     public class ContentsController : ControllerBase
@@ -44,6 +43,7 @@ namespace Backend_API.Controllers
             return content;
         }
 
+        [Authorize]
         // PUT: api/Contents/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
@@ -75,9 +75,10 @@ namespace Backend_API.Controllers
             return NoContent();
         }
 
-        // POST: api/Contents
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
+		[Authorize]
+		// POST: api/Contents
+		// To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+		[HttpPost]
         public async Task<ActionResult<Content>> PostContent(Content content)
         {
             _context.Content.Add(content);
@@ -86,8 +87,9 @@ namespace Backend_API.Controllers
             return CreatedAtAction("GetContent", new { id = content.ContentId }, content);
         }
 
-        // DELETE: api/Contents/5
-        [HttpDelete("{id}")]
+		[Authorize]
+		// DELETE: api/Contents/5
+		[HttpDelete("{id}")]
         public async Task<IActionResult> DeleteContent(int id)
         {
             var content = await _context.Content.FindAsync(id);

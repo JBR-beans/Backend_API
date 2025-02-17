@@ -7,11 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Backend_API.Data;
 using Backend_API.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Backend_API.Controllers
 {
-
-    [Route("api/[controller]")]
+    // getting feedback data could expose peoples details so it all needs authorization
+	[Authorize]
+	[Route("api/[controller]")]
     [ApiController]
     public class FeedbacksController : ControllerBase
     {
@@ -22,8 +24,8 @@ namespace Backend_API.Controllers
             _context = context;
         }
 
-        // GET: api/Feedbacks
-        [HttpGet]
+		// GET: api/Feedbacks
+		[HttpGet]
         public async Task<ActionResult<IEnumerable<Feedback>>> GetFeedback()
         {
             return await _context.Feedback.ToListAsync();

@@ -42,7 +42,7 @@ namespace Backend_API.Data
 				{
 					ContentId = 1,
 					Title = "1Title",
-					Author = "Author",
+					AuthorId = "1",
 					Body = "body",
 					CreatedAt = new DateTime(2025, 04, 14),
 					UpdatedAt = new DateTime(2025, 04, 14),
@@ -52,7 +52,7 @@ namespace Backend_API.Data
 				{
 					ContentId = 2,
 					Title = "2Title",
-					Author = "Author",
+					AuthorId = "1",
 					Body = "body",
 					CreatedAt = new DateTime(2025, 04, 14),
 					UpdatedAt = new DateTime(2025, 04, 14),
@@ -62,7 +62,7 @@ namespace Backend_API.Data
 				{
 					ContentId = 3,
 					Title = "3Title",
-					Author = "Author",
+					AuthorId = "1",
 					Body = "body",
 					CreatedAt = new DateTime(2025, 04, 14),
 					UpdatedAt = new DateTime(2025, 04, 14),
@@ -72,7 +72,7 @@ namespace Backend_API.Data
 				{
 					ContentId = 4,
 					Title = "4Title",
-					Author = "Author",
+					AuthorId = "1",
 					Body = "body",
 					CreatedAt = new DateTime(2025, 04, 14),
 					UpdatedAt = new DateTime(2025, 04, 14),

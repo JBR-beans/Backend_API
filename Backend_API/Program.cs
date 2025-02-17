@@ -56,7 +56,7 @@ namespace Backend_API
 				Body = "Test Body",
 				CreatedAt = DateTime.Now,
 				UpdatedAt = DateTime.Now,
-				Author = "dev"
+				AuthorId = "1"
 			};
 
 			app.Run();

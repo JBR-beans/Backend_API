@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Backend_API.Data;
 using Backend_API.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Backend_API.Controllers
 {
@@ -42,9 +43,10 @@ namespace Backend_API.Controllers
             return businessContactDetails;
         }
 
-        // PUT: api/BusinessContactDetails/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
+		[Authorize]
+		// PUT: api/BusinessContactDetails/5
+		// To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+		[HttpPut("{id}")]
         public async Task<IActionResult> PutBusinessContactDetails(int id, BusinessContactDetails businessContactDetails)
         {
             if (id != businessContactDetails.BusinessContactDetailsId)
@@ -73,9 +75,10 @@ namespace Backend_API.Controllers
             return NoContent();
         }
 
-        // POST: api/BusinessContactDetails
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
+		[Authorize]
+		// POST: api/BusinessContactDetails
+		// To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+		[HttpPost]
         public async Task<ActionResult<BusinessContactDetails>> PostBusinessContactDetails(BusinessContactDetails businessContactDetails)
         {
             _context.BusinessContactDetails.Add(businessContactDetails);
@@ -84,8 +87,9 @@ namespace Backend_API.Controllers
             return CreatedAtAction("GetBusinessContactDetails", new { id = businessContactDetails.BusinessContactDetailsId }, businessContactDetails);
         }
 
-        // DELETE: api/BusinessContactDetails/5
-        [HttpDelete("{id}")]
+		[Authorize]
+		// DELETE: api/BusinessContactDetails/5
+		[HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBusinessContactDetails(int id)
         {
             var businessContactDetails = await _context.BusinessContactDetails.FindAsync(id);
